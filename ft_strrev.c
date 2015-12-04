@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/28 16:10:47 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/04 11:06:12 by tvisenti         ###   ########.fr       */
+/*   Created: 2015/12/03 14:39:22 by tvisenti          #+#    #+#             */
+/*   Updated: 2015/12/03 15:26:46 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t n)
+char		*ft_strrev(char *str)
 {
-	int	i;
-	int	k;
+	int		i;
+	int		k;
+	char	c;
 
-	if (!*s2)
-		return ((char *)s1);
 	i = 0;
-	k = 0;
-	while ((s1[i] && n > 0 ))
+	k = ft_strlen(str) - 1;
+	while (i < k)
 	{
-		while (s2[k] && s1[i + k] == s2[k])
-			k++;
-		if (!s2[k] && ft_strlen(s2) <= n)
-			return ((char *)s1 + i);
-		k = 0;
+		c = str[i];
+		str[i] = str[k];
+		str[k] = c;
 		i++;
-		n--;
+		k--;
 	}
-	return (NULL);
+	return (str);
 }
