@@ -6,11 +6,10 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 14:39:34 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/04 11:06:14 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/06 13:42:58 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strstr(const char *s1, const char *s2)
@@ -19,7 +18,7 @@ char	*ft_strstr(const char *s1, const char *s2)
 	int	k;
 
 	if (!*s2)
-		return ((char *) s1);
+		return ((char *)s1);
 	i = 0;
 	k = 0;
 	while (s1[i])

@@ -6,11 +6,10 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 11:48:29 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/02 17:18:58 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/06 13:25:08 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdlib.h>
 #include "libft.h"
 

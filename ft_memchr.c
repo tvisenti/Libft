@@ -6,11 +6,10 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 11:03:05 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/02 18:24:03 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/06 13:27:35 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void				*ft_memchr(const void *s, int c, size_t n)

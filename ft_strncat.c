@@ -6,11 +6,10 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 08:51:06 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/11/28 17:10:55 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/06 13:41:08 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
