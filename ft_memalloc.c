@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 11:48:29 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/06 13:25:08 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/09 14:35:21 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	*ft_memalloc(size_t size)
 {
 	void	*t;
 
-	t = (void *)malloc(size);
+	t = malloc(sizeof(void *) * size);
 	if (!t)
 		return (NULL);
-	else
-		return (t);
+	ft_memset(t, 0, size);
+	return (t);
 }

@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 16:13:31 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/05 13:05:39 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/09 16:18:18 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	ft_neg_itoa(long n)
 	return (0);
 }
 
-static char	*ft_retitoa(int n, int len, char *str, long nb)
+static char	*ft_retitoa(int n, int len, char *str, int nb)
 {
 	if (n < 0)
 	{
@@ -63,18 +63,20 @@ char		*ft_itoa(int n)
 {
 	char	*str;
 	int		len;
-	long	nb;
+	int		nb;
 	int		neg;
 
 	if (n == 0)
 		return ("0");
 	if (n == -2147483648)
 		return ("-2147483648");
-	nb = (long)n;
+	nb = n;
 	neg = 0;
 	len = ft_divint(n);
 	if (ft_neg_itoa(n) == 1)
 		neg = 1;
 	str = ft_strnew(len);
+	if (!str)
+		return (NULL);
 	return (ft_retitoa(n, len, str, nb));
 }

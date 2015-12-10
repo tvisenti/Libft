@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 16:13:53 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/06 13:20:35 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/09 16:12:31 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ char		**ft_strsplit(char const *s, char c)
 	i = 0;
 	words = ft_cntwords((char *)s, c);
 	tab = (char **)malloc(sizeof(char *) * (words + 1));
-	tab[words] = NULL;
 	if (!tab)
 		return (NULL);
+	tab[words] = NULL;
 	while (words--)
 	{
 		while (*s == c && *s != '\0')
