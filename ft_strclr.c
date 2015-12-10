@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:42:21 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/08 14:09:47 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/10 09:58:14 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_strclr(char *s)
 {
 	if (s == NULL)
-		return;
+		return ;
 	while (*s)
 	{
 		while (*s == '\0')

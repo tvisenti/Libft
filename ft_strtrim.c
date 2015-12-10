@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 14:15:41 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/09 14:08:40 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/10 10:47:50 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strtrim(char const *s)
 
 	i = 0;
 	m = 0;
+	if (!s)
+		return (NULL);
 	k = ft_strlen(s) - 1;
 	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
 		i++;

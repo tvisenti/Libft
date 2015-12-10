@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/29 11:28:35 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/10 10:53:46 by tvisenti         ###   ########.fr       */
+/*   Created: 2015/12/10 12:12:13 by tvisenti          #+#    #+#             */
+/*   Updated: 2015/12/10 13:02:02 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+void	lstadd(t_list **alst, t_list *new)
 {
-	char	*s2;
-	int		i;
-
-	i = 0;
-	s2 = ft_strnew(len);
-	if (s2 == NULL || s == NULL)
-		return (NULL);
-	while (len)
-	{
-		len--;
-		s2[i] = s[start];
-		i++;
-		start++;
-	}
-	return (s2);
+	new->next = *alst;
+	*alst = new;
 }

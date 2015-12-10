@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 16:13:31 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/09 16:18:18 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/10 10:38:45 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,15 +67,15 @@ char		*ft_itoa(int n)
 	int		neg;
 
 	if (n == 0)
-		return ("0");
+		return (ft_strdup("0"));
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (ft_strdup("-2147483648"));
 	nb = n;
 	neg = 0;
 	len = ft_divint(n);
 	if (ft_neg_itoa(n) == 1)
 		neg = 1;
-	str = ft_strnew(len);
+	str = ft_strnew((len) + neg);
 	if (!str)
 		return (NULL);
 	return (ft_retitoa(n, len, str, nb));

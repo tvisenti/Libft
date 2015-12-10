@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 11:56:18 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/06 13:29:46 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/10 10:41:54 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 void	ft_memdel(void **ap)
 {
-	free(*ap);
-	*ap = NULL;
+	if (*ap)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
+	return ;
 }
