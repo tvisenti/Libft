@@ -6,9 +6,11 @@
 #    By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/28 10:56:39 by tvisenti          #+#    #+#              #
-#    Updated: 2015/12/10 15:40:42 by tvisenti         ###   ########.fr        #
+#    Updated: 2015/12/27 10:06:01 by tvisenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+.PHONY: all clean fclean re
 
 NAME = libft.a
 
@@ -27,23 +29,24 @@ ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c \
 ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c \
 ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c \
 ft_putendl_fd.c ft_putnbr_fd.c ft_strrev.c ft_swap.c ft_str_delwhite.c \
-ft_lstadd.c
+ft_isupper.c ft_islower.c
 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(CFLAGS) -c $(SRC)
-	ar rc	$(NAME) $(OBJ)
-	ranlib	$(NAME)
+	@$(CC) $(CFLAGS) -c $(SRC)
+	@ar rc	$(NAME) $(OBJ)
+	@ranlib	$(NAME)
+	@echo "Compilation reussie"
 
 clean:
-	rm -rf *.o
+	@rm -rf $(OBJ)
+	@echo "Suppression des .o"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo "+ libft.a"
 
 re: fclean all
-
-.PHONY: fclean clean all
