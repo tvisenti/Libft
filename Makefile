@@ -6,7 +6,7 @@
 #    By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/28 10:56:39 by tvisenti          #+#    #+#              #
-#    Updated: 2015/12/27 10:06:01 by tvisenti         ###   ########.fr        #
+#    Updated: 2015/12/28 14:03:48 by tvisenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,18 +35,18 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(SRC)
 	@$(CC) $(CFLAGS) -c $(SRC)
 	@ar rc	$(NAME) $(OBJ)
 	@ranlib	$(NAME)
-	@echo "Compilation reussie"
+	@echo "Compilation success"
 
 clean:
-	@rm -rf $(OBJ)
-	@echo "Suppression des .o"
+	@rm -rf *.o
+	@echo "Delete .o"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "+ libft.a"
+	@echo "Delete $(NAME)"
 
 re: fclean all
