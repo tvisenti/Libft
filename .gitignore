@@ -3,6 +3,7 @@ Object files
 *.ko
 *.obj
 *.elf
+*.swp
 
 # Precompiled Headers
 *.gch
