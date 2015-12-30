@@ -6,7 +6,7 @@
 #    By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/28 10:56:39 by tvisenti          #+#    #+#              #
-#    Updated: 2015/12/30 09:32:38 by tvisenti         ###   ########.fr        #
+#    Updated: 2015/12/30 09:47:48 by tvisenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,10 +39,10 @@ $(NAME): $(SRC)
 	@$(CC) $(CFLAGS) -c $(SRC)
 	@ar rc	$(NAME) $(OBJ)
 	@ranlib	$(NAME)
-	@echo "Compilation success"
+	@echo "Compilation Success"
 
 clean:
-	@rm -rf *.o
+	@rm -rf $(OBJ)
 	@echo "Delete .o"
 
 fclean: clean

@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/26 14:30:12 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/11/29 17:48:34 by tvisenti         ###   ########.fr       */
+/*   Created: 2015/12/11 09:07:52 by tvisenti          #+#    #+#             */
+/*   Updated: 2015/12/11 09:13:02 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
+int		ft_isupper(int c)
 {
-	write(fd, &c, 1);
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
 }

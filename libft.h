@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:06:52 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/10 15:40:12 by tvisenti         ###   ########.fr       */
+/*   Updated: 2015/12/11 14:38:30 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,14 +77,7 @@ void				ft_putnbr_fd(int n, int fd);
 char				*ft_strrev(char *str);
 char				*ft_str_delwhite(char *str);
 void				ft_swap(int *a, int *b);
-
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
-
-void				ft_lstadd(t_list **alst, t_list *new);
+int					ft_isupper(int c);
+int					ft_islower(int c);
 
 #endif

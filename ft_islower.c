@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/26 14:30:12 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/11/29 17:48:34 by tvisenti         ###   ########.fr       */
+/*   Created: 2015/12/11 09:10:47 by tvisenti          #+#    #+#             */
+/*   Updated: 2015/12/11 09:11:37 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
+int		ft_islower(int c)
 {
-	write(fd, &c, 1);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }
