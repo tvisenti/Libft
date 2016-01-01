@@ -106,16 +106,73 @@ either size is incorrect or that dst is not a proper ''C'' string). The check ex
 problems in incorrect code.
 
 #### strchr
+> char *strchr(const char *s, int c);
+* The strchr() function returns a pointer to the first occurrence of the character c in the string s.
+* The strchr() and strrchr() functions return a pointer to the matched character or NULL if the character is not found. The terminating null byte is considered part of the string, so that if c is specified as aq\0aq, these functions return a pointer to the terminator.
+
 #### strrchr
+> char *strrchr(const char *s, int c);
+* The strrchr() function returns a pointer to the last occurrence of the character c in the string s.
+* The strchr() and strrchr() functions return a pointer to the matched character or NULL if the character is not found. The terminating null byte is considered part of the string, so that if c is specified as aq\0aq, these functions return a pointer to the terminator.
+
 #### strstr
+> char *strstr(const char *haystack, const char *needle);
+* The strstr() function finds the first occurrence of the substring needle in the string haystack. The terminating null bytes (aq\0aq) are not compared.
+* These functions return a pointer to the beginning of the substring, or NULL if the substring is not found.
+
 #### strnstr
+> char *strnstr(const char	*big, const char *little, size_t len);
+* The strnstr() function locates the	first occurrence of the	null-terminated string little in the string big, 
+where not more than	len characters are searched. Characters that appear after a `\0'	character are not searched. 
+Since the strnstr() function is	a FreeBSD specific API,	it should only be used when portability is not a concern.
+* If little is an empty string, big is returned; if little occurs nowhere in	big, NULL is returned; otherwise a pointer to the first	character of the first occurrence of little is returned.
+
 #### strcmp
+> int strcmp(const char *s1, const char *s2);
+* The strcmp() function compares the two strings s1 and s2. It returns an integer less than, equal to, or greater than zero if s1 is found, respectively, to be less than, to match, or be greater than s2.
+* The strcmp() and strncmp() functions return an integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
+
 #### strncmp
+> int strncmp(const char *s1, const char *s2, size_t n);
+* The strncmp() function is similar, except it only compares the first (at most) n bytes of s1 and s2.
+* The strcmp() and strncmp() functions return an integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
+
 #### atoi
+> int atoi(const char *nptr);
+* The atoi() function converts the initial portion of the string pointed to by nptr to int.
+* The converted value.
+
 #### isalpha
+> int isalpha(int c);
+* Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c)). In some locales, there may be additional characters for which isalpha() is true-letters which are neither upper case nor lower case.
+* The values returned are nonzero if the character c falls into the tested class, and a zero value if not.
+
 #### isdigit
+> int isdigit(int c);
+* Checks for a digit (0 through 9).
+* The values returned are nonzero if the character c falls into the tested class, and a zero value if not.
+
 #### isalnum
+> int isalnum(int c);
+* Checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)).
+* The values returned are nonzero if the character c falls into the tested class, and a zero value if not.
+
 #### isascii
+> int isascii(int c);
+* Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
+* The values returned are nonzero if the character c falls into the tested class, and a zero value if not.
+
 #### isprint
+> int isprint(int c);
+* Checks for any printable character including space.
+* The values returned are nonzero if the character c falls into the tested class, and a zero value if not.
+
 #### toupper
+> int toupper(int c);
+* toupper() converts the letter c to upper case, if possible. If c is not an unsigned char value, or EOF, the behavior of these functions is undefined.
+* The value returned is that of the converted letter, or c if the conversion was not possible.
+
 #### tolower
+> int tolower(int c);
+* tolower() converts the letter c to lower case, if possible. If c is not an unsigned char value, or EOF, the behavior of these functions is undefined.
+* The value returned is that of the converted letter, or c if the conversion was not possible.
