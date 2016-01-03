@@ -4,6 +4,7 @@ Object files
 *.obj
 *.elf
 *.swp
+*.swo
 
 # Precompiled Headers
 *.gch
