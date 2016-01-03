@@ -6,14 +6,14 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/30 09:01:34 by tvisenti          #+#    #+#             */
-/*   Updated: 2015/12/30 09:20:21 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/01/03 10:48:45 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-size_t		ft_strlen(const char *s, char c)
+size_t		ft_strclen(const char *s, char c)
 {
 	size_t	i;
 
