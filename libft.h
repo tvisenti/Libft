@@ -88,5 +88,6 @@ char				*ft_str_delwhite(char *str);
 void				ft_swap(int *a, int *b);
 int					ft_isupper(int c);
 int					ft_islower(int c);
+char				*ft_strocpy(char *str, char c);
 
 #endif

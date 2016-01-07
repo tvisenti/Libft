@@ -1,27 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclen.c                                       :+:      :+:    :+:   */
+/*   ft_strocpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/30 09:01:34 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/01/03 10:48:45 by tvisenti         ###   ########.fr       */
+/*   Created: 2016/01/07 08:49:14 by tvisenti          #+#    #+#             */
+/*   Updated: 2016/01/07 08:49:16 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
-#include <stdio.h>
 
-size_t		ft_strclen(const char *s, char c)
+char		*ft_strocpy(char *str, char c)
 {
-	size_t	i;
+	int		i;
+	int		i_save;
+	int		len;
+	char	*str_save;
 
 	i = 0;
-	while (s[i] && s[i] != c)
+	len = 0;
+	while (str[i] != c)
 		i++;
-	if (s[i] != c)
-			return (0);
-	return (i);
+	i++;
+	i_save = i;
+	while (str[i])
+	{
+		i++;
+		len++;
+	}
+	str_save = (char *)malloc(sizeof(char) * len);
+	str_save = ft_strsub(str, i_save, len);
+	return (str_save);
 }
