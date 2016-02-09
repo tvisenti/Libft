@@ -6,7 +6,7 @@
 /*   By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:06:52 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/01/03 10:54:17 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/02/09 11:20:52 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,6 @@ char				*ft_str_delwhite(char *str);
 void				ft_swap(int *a, int *b);
 int					ft_isupper(int c);
 int					ft_islower(int c);
-size_t				ft_strclen(const char *s, char c);
 char				*ft_strocpy(char *str, char c);
 
 #endif
