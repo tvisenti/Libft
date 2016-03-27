@@ -29,7 +29,7 @@ ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c \
 ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c \
 ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c \
 ft_putendl_fd.c ft_putnbr_fd.c ft_strrev.c ft_swap.c ft_str_delwhite.c \
-ft_isupper.c ft_islower.c ft_lstadd.c ft_strocpy.c
+ft_isupper.c ft_islower.c ft_lstadd.c ft_strocpy.c ft_itoa_base.c
 
 OBJ = $(SRC:.c=.o)
 
