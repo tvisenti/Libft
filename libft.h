@@ -12,7 +12,10 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 42
 
+# include <unistd.h>
+# include <stdlib.h>
 # include <string.h>
 
 size_t				ft_strlen(const char *s);
@@ -73,6 +76,8 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+
+int					get_next_line(int const fd, char **line);
 
 typedef struct		s_list
 {
