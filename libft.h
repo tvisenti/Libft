@@ -91,8 +91,9 @@ void				ft_lstadd(t_list **alst, t_list *new);
 char				*ft_strrev(char *str);
 char				*ft_str_delwhite(char *str);
 void				ft_swap(int *a, int *b);
-int					ft_isupper(int c);
-int					ft_islower(int c);
+int				ft_isupper(int c);
+int				ft_islower(int c);
 char				*ft_strocpy(char *str, char c);
+char				ft_itoa_base(int value, int base);
 
 #endif
