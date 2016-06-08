@@ -6,7 +6,7 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/19 14:18:27 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/08 09:52:04 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/08 10:49:39 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void			pf_ft_end(t_flag *f)
 		if (f->spe == 'x' || f->spe == 'X' || f->spe == 'o' || f->spe == 'O'
 			|| f->spe == 'u' || f->spe == 'U' || f->spe == 'd' || f->spe == 'D'
 			|| f->spe == 'p' || f->spe == 'S' || f->spe == 'i' || (f->spe == 's'
-			&& f->fla[0] < pf_ft_strlen(f->arg) && f->fla[0] > 0) || f->spe == 'C'
-			|| (f->spe == 'c' && f->fla[10] == 1))
+			&& f->fla[0] < pf_ft_strlen(f->arg) && f->fla[0] > 0) ||
+			f->spe == 'C' || (f->spe == 'c' && f->fla[10] == 1))
 			free(f->arg);
 	}
 }
