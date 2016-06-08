@@ -6,7 +6,7 @@
 #    By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/28 10:56:39 by tvisenti          #+#    #+#              #
-#    Updated: 2016/05/14 11:13:32 by tvisenti         ###   ########.fr        #
+#    Updated: 2016/06/08 08:53:56 by tvisenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,11 @@ all: $(NAME)
 $(NAME): $(OBJLIB)
 	@ar rc	$(NAME) $(OBJLIB)
 	@ranlib	$(NAME)
-	@echo "\033[1;34mLibft\t\t\033[1;33mCompilation\t\033[0;32m[OK]\033[0m"
+	@echo "	_,  _ __, __, ___"
+	@echo "	|   | |_) |_   | "
+	@echo "	| , | |_) |    | "
+	@echo "	~~~ ~ ~   ~    ~ "
+	@echo "\033[1;34mLibft\t\t\033[1;33mCompilation\t\033[0;32m-OK-\033[0m"
 
 $(OBJLIB_PATH)/%.o: $(LIB_PATH)/%.c
 	@mkdir $(OBJLIB_PATH) 2> /dev/null || true
@@ -54,17 +58,16 @@ $(OBJLIB_PATH)/%.o: $(LIB_PATH)/%.c
 
 clean:
 	@rm -rf $(OBJLIB)
-	@echo "\033[1;34mLibft\t\t\033[1;33mCleaning obj\t\033[0;32m[OK]\033[0m"
+	@echo "\033[1;34mLibft\t\t\033[1;33mCleaning obj\t\033[0;32m-OK-\033[0m"
 
 fclean: clean
 	@rm -rf ./obj $(NAME)
-	@echo "\033[1;34mLibft\t\t\033[1;33mCleaning lib\t\033[0;32m[OK]\033[0m"
+	@echo "\033[1;34mLibft\t\t\033[1;33mCleaning lib\t\033[0;32m-OK-\033[0m"
 	@cd ./ft_printf && $(MAKE) fclean
 
 re: fclean all
-	@cd ./ft_printf && $(MAKE) re
 
 norme:
 	@norminette $(LIB) $(INC)
-	@echo "\033[1;34mLibft\t\t\033[1;33mNorminette\t\033[0;32m[OK]\033[0m"
+	@echo "\033[1;34mLibft\t\t\033[1;33mNorminette\t\033[0;32m-OK-\033[0m"
 	@cd ./ft_printf && $(MAKE) norme

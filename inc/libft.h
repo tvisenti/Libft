@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef LIBft_H
+# define LIBft_H
 # define BUFF_SIZE 42
 
 # include <unistd.h>
