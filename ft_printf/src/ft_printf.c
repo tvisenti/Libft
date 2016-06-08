@@ -6,7 +6,7 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/19 14:18:27 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/08 08:29:45 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/08 09:52:04 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void			pf_ft_end(t_flag *f)
 **		sinon appelle dispatcher et affiche à la fin de la fonction
 */
 
-int				pf_ft_printf(const char *format, ...)
+int				ft_printf(const char *format, ...)
 {
 	va_list		ap;
 	t_flag		f;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pf_ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/19 14:27:23 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/05/14 11:38:07 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/08 09:56:17 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ typedef struct	s_spec
 */
 
 void			pf_ft_end(t_flag *f);
-int				pf_ft_printf(const char *format, ...);
+int				ft_printf(const char *format, ...);
 
 /*
 ** CHECKS
