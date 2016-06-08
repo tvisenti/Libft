@@ -6,12 +6,12 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/19 14:27:23 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/08 09:56:17 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/08 11:04:07 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef pf_ft_PRINTF_H
-# define pf_ft_PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <unistd.h>
