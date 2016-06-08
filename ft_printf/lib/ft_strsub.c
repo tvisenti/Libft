@@ -6,14 +6,14 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 11:28:35 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/05/14 11:32:52 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/08 08:16:07 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "../../inc/ft_printf.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+char	*pf_ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*fresh;
 	char	*tmp;
@@ -35,5 +35,4 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		len--;
 	}
 	return (fresh);
-
 }
