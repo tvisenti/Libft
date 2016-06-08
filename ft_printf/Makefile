@@ -6,7 +6,7 @@
 #    By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/04/20 11:33:31 by tvisenti          #+#    #+#              #
-#    Updated: 2016/06/08 08:51:13 by tvisenti         ###   ########.fr        #
+#    Updated: 2016/06/08 11:03:14 by tvisenti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ NAME = libftprintf.a
 
 SRC_PATH = ./src
 LIB_PATH = ./lib
-INC_PATH = ./inc
+INC_PATH = ../inc
 OBJ_PATH = ./obj
 OBJLIB_PATH = ./obj
 
