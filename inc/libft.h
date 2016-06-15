@@ -6,7 +6,7 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:06:52 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/08 10:16:44 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/15 10:18:40 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 
-long				ft_atoi(const char *str);
+int					ft_atoi(char *str);
 
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
@@ -70,6 +70,7 @@ char				*ft_itoa(int n);
 
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
+void				ft_putstrn(char *line);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
 void				ft_putchar_fd(char c, int fd);
