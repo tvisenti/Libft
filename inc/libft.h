@@ -6,12 +6,12 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:06:52 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/15 10:18:40 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/17 11:49:49 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBft_H
-# define LIBft_H
+#ifndef LIBFT_H
+# define LIBFT_H
 # define BUFF_SIZE 42
 
 # include <unistd.h>

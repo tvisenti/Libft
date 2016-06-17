@@ -6,7 +6,7 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 12:25:22 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/10 16:27:09 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/17 11:50:28 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_check_digit(char *str)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (str[i] == ' ' || str[i] == '\t' || (str[i] >= '0' && str[i] <= '9'))
@@ -24,7 +24,7 @@ static int	ft_check_digit(char *str)
 	return (0);
 }
 
-int		ft_atoi(char *str)
+int			ft_atoi(char *str)
 {
 	long	sign;
 	long	nbr;
