@@ -6,7 +6,7 @@
 /*   By: tvisenti <tvisenti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 12:25:22 by tvisenti          #+#    #+#             */
-/*   Updated: 2016/06/17 11:50:28 by tvisenti         ###   ########.fr       */
+/*   Updated: 2016/06/22 18:26:33 by tvisenti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,6 @@ int			ft_atoi(char *str)
 	}
 	if (!(sign * nbr <= 2147483647 && sign * nbr >= -2147483648) ||
 		ft_check_digit(str) != 1)
-		return (-0);
+		return (-1);
 	return (sign * nbr);
 }
